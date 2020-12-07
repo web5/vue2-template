@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['plugin:vue/essential', 'prettier', 'prettier/vue', 'plugin:vue/base'],
+  extends: ['plugin:vue/essential', 'prettier', 'prettier/vue'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: 'babel-eslint',
@@ -16,7 +16,7 @@ module.exports = {
       2,
       {
         attribute: 1,
-        baseIndent: 0,
+        baseIndent: 1,
         closeBracket: 0,
         alignAttributesVertically: true,
         ignores: [],
@@ -37,6 +37,14 @@ module.exports = {
           max: 1,
           allowFirstLine: false,
         },
+      },
+    ],
+    'vue/multiline-html-element-content-newline': [
+      'error',
+      {
+        ignoreWhenEmpty: true,
+        ignores: ['pre', 'textarea', ...INLINE_ELEMENTS],
+        allowEmptyLines: false,
       },
     ],
   },
