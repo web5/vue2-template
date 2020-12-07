@@ -8,4 +8,5 @@ module.exports = {
   bracketSpacing: true, // 对象字面量的大括号间使用空格（默认true）
   arrowParens: 'avoid', // 只有一个参数的箭头函数的参数是否带圆括号（默认avoid）,\
   htmlWhitespaceSensitivity: 'ignore', // 解决 包裹文字时候结束标签的结尾尖括号掉到了下一行 的问题
+  vueIndentScriptAndStyle: false, // vue文件 script, style首层不缩进
 };

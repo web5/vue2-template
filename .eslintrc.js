@@ -16,7 +16,7 @@ module.exports = {
       2,
       {
         attribute: 1,
-        baseIndent: 1,
+        baseIndent: 1, // 可以试着改动为0试一试，会有校验告警
         closeBracket: 0,
         alignAttributesVertically: true,
         ignores: [],
@@ -43,7 +43,7 @@ module.exports = {
       'error',
       {
         ignoreWhenEmpty: true,
-        ignores: ['pre', 'textarea', ...INLINE_ELEMENTS],
+        ignores: ['pre', 'textarea', 'span', 'i'],
         allowEmptyLines: false,
       },
     ],

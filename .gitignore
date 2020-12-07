@@ -15,7 +15,7 @@ pnpm-debug.log*
 
 # Editor directories and files
 .idea
-.vscode
+## .vscode 团队项目管理，我们需要进行一定项目规范管理增加一定的规范
 *.suo
 *.ntvs*
 *.njsproj
